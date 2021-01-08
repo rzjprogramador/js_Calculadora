@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .calculadora {
+    width: 80vw;
+    padding: 0.5rem;
+    background: #000;
+  }
+  .containerCalculadora {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .display {
+    width: 100%;
+    background: yellow;
+  }
+  .displayTopo {
+    display: flex;
+    font-size: 0.90rem;
+    justify-content: space-between;
+
+  }
+  .displayOperacoes {
+    padding: 0.9rem;
+    background: red;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+  }
+  .containerBotoes {
+
+    background: aquamarine;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btn-calc {
+    width: 20%;
+    padding: 0.3rem 0.5rem;
+    color: white;
+    background: blueviolet;
+  }
+  .btn-utils {
+    color: white;
+    background: orange;
+
+  }
+  .btn-operador {
+    color: white;
+    background: blue;
+  }
+
+</style>
+
+<body>
+
+  <div class="calculadora">
+    <div class="containerCalculadora">
+      <div class="display">
+        <div class="displayTopo">
+          <div class="hora" id="hora"></div>
+          <div class="data" id="data"></div>
+  
+        </div>
+  
+        <div class="displayOperacoes" id="display"></div>
+  
+      </div>
+  
+      <div class="containerBotoes">
+        <a href="" class="btn-calc btn-utils">C</a>
+        <a href="" class="btn-calc btn-utils">CE</a>
+        <a href="" class="btn-calc btn-operador">%</a>
+        <a href="" class="btn-calc btn-operador">+</a>
+
+
+        <a href="" class="btn-calc">1</a>
+        <a href="" class="btn-calc">2</a>
+        <a href="" class="btn-calc">3</a>
+        <a href="" class="btn-calc btn-operador">x</a>
+
+        <a href="" class="btn-calc">4</a>
+        <a href="" class="btn-calc">5</a>
+        <a href="" class="btn-calc">6</a>
+        <a href="" class="btn-calc btn-operador">-</a>
+
+        <a href="" class="btn-calc">7</a>
+        <a href="" class="btn-calc">8</a>
+        <a href="" class="btn-calc">9</a>
+        <a href="" class="btn-calc btn-operador">+</a>
+
+        <a href="" class="btn-calc">0</a>
+        <a href="" class="btn-calc btn-operador">.</a>
+        <a href="" class="btn-calc btn-operador">=</a>
+  
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="scripts/controller/CalcController.js"></script>
+    <script src="scripts/calculadora.js"></script>
+  
+</body>
+</html>
